@@ -63,13 +63,6 @@ def rscan(addr):
 		print "Address %s has %d reused R value%s!" % (addr, len(bad), "s"[len(bad)==1:])
 		return bad
 		
-#if __name__ == '__main__':
-	#from sys import argv
-	#print """SCAN ADDR"""
-	#if len(argv) == 1:
-#		addr = raw_input("type address:  ")
-#	elif len(argv) == 2 and isinstance(argv[1], basestring):
-#		addr = str(argv[1])
 with open("addr.txt") as file:
     for line in file:
         addr = str.strip(line)
